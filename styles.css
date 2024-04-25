@@ -1,7 +1,14 @@
-h1 {
-    color: blue;
+h1{
+font-family: Arial, sans-serif;
+color: #333; 
+text-align: center;
+margin-top: 50px;
 }
 
 p {
-    font-size: 18px;
+    font-family: Arial, sans-serif; 
+    color: #666; 
+    text-align: center; 
+    font-size: 18px; 
+    margin-top: 20px; 
 }
