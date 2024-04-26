@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylephp.css">
-    <title>Tabla</title>
+    <title>Pokedex</title>
 </head>
 <body>
     
     <center>
 
-        <h1>Pokemones</h1>
-    <?php  for($i=1; $i<=100;$i++) {
+        <h1>Pokedex</h1>
+        <h2>pokemones</h2>
+        <?php  for($i=1; $i<=100;$i++) {
 
-         echo "
+        echo "
          <div class='card'>
          <a href='http://localhost/Pokedex/pokemones.php'>
          <img class='img' src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/{$i}.png'alt='pokemon'>
