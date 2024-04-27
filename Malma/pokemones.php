@@ -14,6 +14,7 @@
         <h2>Pokemones</h2>
         <form action="#" class="search-form">
             <input type="text" placeholder="Buscar Pokémon">
+            
             <button type="submit">Buscar</button>
         </form>
     <?php  for($i=1; $i<=1000;$i++) {
