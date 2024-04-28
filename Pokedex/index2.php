@@ -4,10 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
+    <title>Pokemon</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <tr>
+        <td colspan="2"><button class="boton-volver" onclick="goBack()">Volver</button></td>
+    </tr>
+    <script>
+        function goBack() {
+        window.history.back();
+        }
+    </script>
 <?php   
         
         if (isset($_GET['indice'])) {
@@ -106,6 +114,7 @@
             </table>
         </td>
     </tr>
+    
 </table>
 </center>
 
