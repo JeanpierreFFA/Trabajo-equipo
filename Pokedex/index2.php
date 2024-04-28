@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +9,18 @@
 </head>
 <body>
 <?php   
+        
+        if (isset($_GET['indice'])) {
+            // Obtener el código del Pokémon del parámetro 'indice'
             $indice = $_GET['indice'];
+        } elseif (isset($_GET['pokemonCode'])) {
+            // Obtener el código del Pokémon del parámetro 'pokemonCode' enviado desde el formulario
+            $indice = $_GET['pokemonCode'];
+        } else {
+            // Si no se proporcionó ningún código del Pokémon, mostrar un mensaje de error
+            echo "<p>No se ha proporcionado ningún código de Pokémon.</p>";
+            exit(); // Detener el script
+        }
 
             $pokemonData = @file_get_contents("https://pokeapi.co/api/v2/pokemon/{$indice}");
             $pokemonData = json_decode($pokemonData, true);
@@ -99,10 +111,3 @@
 
 </body>
 </html> 
-
-
-
-
-
-
-        
