@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="Favicon.png">
     <link rel="stylesheet" href="stylephp.css">
     <title>Pokedex</title>
 </head>
@@ -25,23 +26,18 @@
         echo "</form>";
         ?>
 
-    <?php  
-for ($i = 1; $i <= 1025; $i++) {
-    echo "
-    <div class='card'>
-        <a href='javascript:void(0);' onclick='abrirPestana()'>
-            <img class='img' src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/{$i}.png' alt='pokemon'>
-        </a>
-    </div>";
-} 
+<?php  
+    for($i = 1; $i <= 1025; $i++) {
+        echo "
+            <div class='card'>
+            <a href='index2.php?indice=$i'>
+                    <img class='img' src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/{$i}.png' alt='pokemon'>
+                </a>
+            </div>";
+    }    
 ?>
 
-<script>
-    function abrirPestana() {
-        // Abre una nueva pestaña con el mensaje "Hola Mundo"
-        window.open("about:blank").document.body.innerText = "¡Hola Mundo!";
-    }
-</script>
+
    
     </center>
 
