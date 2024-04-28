@@ -1,0 +1,95 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #cecece;
+}
+
+header {
+    background-color: #413e3e;
+    color: yellow;
+    text-shadow: 2px 4px blue;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.search-form {
+    margin-top: 20px;
+}
+
+.search-form input[type="text"] {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-form button {
+    padding: 8px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #45a049;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para las tarjetas de Pokémon */
+.pokemon-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 200px;
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+.pokemon-image {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 10px auto;
+    display: block;
+}
+
+.pokemon-name {
+    font-weight: bold;
+    color: #333;
+}
+
+.pokemon-type {
+    color: #777;
+}
+
+.pokemon-stat {
+    margin-top: 5px;
+    color: #555;
+}
+/**/
+.container {
+    float: left;
+    width: 18%; /* ajusta el ancho según tu diseño */
+    margin-right: 20px; /* ajusta el margen entre elementos */
+}
+
+h2 {
+    background-color: #363636;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0;
+}
