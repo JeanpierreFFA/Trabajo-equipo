@@ -1,0 +1,78 @@
+body {
+    background-image: url('d93340a24d4a8bb58998b5343c5eb380df37f474_hq.jpg'); /* Reemplaza 'ruta/a/tu/imagen.jpg' con la ruta de tu imagen */
+    background-size: 50%; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #93a0a5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(228, 216, 193, 0.1);
+}
+
+h2 {
+    color: #f4ff5d;
+    text-transform: uppercase;
+    margin-top: 0;
+    text-align: center;
+}
+
+img {
+    max-width: 150%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+table {
+    width: 80%;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #b974fa;
+}
+
+tr:nth-child(even) {
+    background-color: #96d3f7;
+}
+
+.type {
+    text-transform: capitalize;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.type-grass {
+    background-color: #78c850;
+}
+
+.type-fire {
+    background-color: #f08030;
+}
+
+.type-water {
+    background-color: #6890f0;
+}
+
+.boton-volver {
+    background-color: #4CAF50; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Quita el borde */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.boton-volver:hover {
+    background-color: #45a049; /* Cambia el color de fondo al pasar el mouse */
+}
