@@ -34,14 +34,14 @@
 .search-form input[type="text"] {
     padding: 8px;
     margin-right: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #da0e0e;
     border-radius: 5px;
 }
 
 .search-form button {
     padding: 8px 20px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #af4c4c;
+    color: rgb(245, 3, 3);
     border: none;
     border-radius: 5px;
     cursor: pointer;
