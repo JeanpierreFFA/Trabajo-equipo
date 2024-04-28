@@ -1,3 +1,4 @@
+/* Estilo para la tarjeta */
 .card {
     display: inline-block;
     border: 2px solid black;
@@ -8,10 +9,23 @@
     position: relative; /* Establece la posición relativa para los elementos hijos */
 }
 
+/* Estilo para la imagen */
 .img {
     width: 100px; /* Ajusta el tamaño de la imagen según sea necesario */
     height: auto; /* Permite que la altura se ajuste automáticamente según el tamaño original de la imagen */
 }
+
+/* Estilo para la tarjeta cuando se pasa el cursor sobre ella */
+.card:hover {
+    border-color: green; /* Cambia el color del borde al pasar el cursor */
+}
+
+/* Estilo para la imagen cuando se pasa el cursor sobre la tarjeta */
+.card:hover .img {
+    transition: transform 0.5s ease-in-out; /* Agrega una transición suave para el efecto de salto */
+    transform: scale(1.50); /* Escala ligeramente la imagen al pasar el cursor */
+}
+
 
 .search-form {
     margin-top: 20px;
