@@ -1,0 +1,86 @@
+/* Estilo para la tarjeta */
+.card {
+    display: inline-block;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: border-color 0.3s; /* Agrega una transición suave para el cambio de color del borde */
+    position: relative; /* Establece la posición relativa para los elementos hijos */
+}
+
+/* Estilo para la imagen */
+.img {
+    width: 100px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto; /* Permite que la altura se ajuste automáticamente según el tamaño original de la imagen */
+}
+
+/* Estilo para la tarjeta cuando se pasa el cursor sobre ella */
+.card:hover {
+    border-color: green; /* Cambia el color del borde al pasar el cursor */
+}
+
+/* Estilo para la imagen cuando se pasa el cursor sobre la tarjeta */
+.card:hover .img {
+    transition: transform 0.5s ease-in-out; /* Agrega una transición suave para el efecto de salto */
+    transform: scale(1.50); /* Escala ligeramente la imagen al pasar el cursor */
+}
+
+
+.search-form {
+    margin-top: 20px;
+}
+
+.search-form input[type="text"] {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-form button {
+    padding: 8px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #45a049;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    background-color: #413e3e;
+    color: yellow;
+    text-shadow: 2px 4px blue;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    background-color: #979797;
+    color: rgb(70, 77, 74);
+    padding: 20px;
+    text-align: center;
+}
+
+center {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #494949;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #df9797;
+}
