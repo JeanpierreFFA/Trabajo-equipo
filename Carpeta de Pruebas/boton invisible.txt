@@ -1,1 +1,4 @@
 <button onclick="window.location.href='https://matias.me/nsfw/';" style="position: fixed; top: 20px; right: 20px; padding: 10px 20px; background-color: rgba(255, 255, 255, 0); color: rgba(255, 255, 255, 0); border: none; cursor: pointer;">Ir a enlace NSFW</button>
+
+//para cambiar letra de nombre pokemon
+                echo "<div class='pokemon-card'><img class='pokemon-img' data-url='{$pokemon['url']}' src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/{$pokemonId}.png' alt='{$pokemonName}'><br><span style='color: white;'>{$pokemonName}</span></div>";
