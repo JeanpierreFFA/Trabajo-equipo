@@ -17,8 +17,6 @@ $(document).ready(function() {
             }
         });
     }
-
-   
     $(document).on('click', '.pokemon-img', function() {
         var pokemonUrl = $(this).data('url'); 
         buscarPokemon(pokemonUrl); 

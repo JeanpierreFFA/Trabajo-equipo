@@ -6,22 +6,27 @@
     <title>Mi Pokedex</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="icon" type="image/png" href="logo.png">
-
+    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
+<button onclick="window.location.href='https://matias.me/nsfw/';" style="position: fixed; top: 20px; right: 20px; padding: 10px 20px; background-color: rgba(255, 255, 255, 0); color: rgba(255, 255, 255, 0); border: none; cursor: pointer;">Ir a enlace NSFW</button>
 
-    <audio id="bgMusic" autoplay>
+
+<audio id="bgMusic" autoplay>
     <source src="musica/notube.mobi - Pokémon Sword & Shield - Marnie Battle Music [TMG Remix].mp3" type="audio/mp3">
-    Tu navegador no soporta el elemento de audio.
-    </audio>
+    
+</audio>
+
+<button id="toggleMusic">Iniciar</button>
+
 
     <center>
         <a href="https://fontmeme.com/es/fuente-pokemon/"><img src="https://fontmeme.com/permalink/240430/4c44d3cf5e5ee4b7b6f8b4aaf0a6c0ce.png" alt="fuente-pokemon" border="0"></a>
     </center>
     <center>
         <form id="pokemonForm" action="">
-            <select id="pokemonSelect" name="pokemon"><br>
+            <select id="pokemonSelect" name="pokemon">
                 <?php 
                     $url = 'https://pokeapi.co/api/v2/pokemon/?limit=1036';
                     $data = json_decode(file_get_contents($url), true);
@@ -44,8 +49,7 @@
             foreach ($data['results'] as $pokemon) {
                 $pokemonName = $pokemon['name'];
                 $pokemonId = getIdFromUrl($pokemon['url']);
-                echo "<div class='pokemon-card'><img class='pokemon-img' data-url='{$pokemon['url']}' src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/{$pokemonId}.png' alt='{$pokemonName}'><br>{$pokemonName}</div>";
-            }
+                echo "<div class='pokemon-card'><img class='pokemon-img' data-url='{$pokemon['url']}' src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/{$pokemonId}.png' alt='{$pokemonName}'><br><span style='color: white; font-family: Arial, Helvetica, sans-serif;'>{$pokemonName}</span></div>";            }
 
             function getIdFromUrl($url) {
                 $parts = explode('/', $url);
@@ -60,7 +64,7 @@
             <span class="close">&times;</span>
             <div id="pokemonInfo"></div>
         </div>
-    </div>
+    </div>  
 
     <script>
         // Array de URLs de las músicas
@@ -84,6 +88,23 @@
         // Evento para detectar el final de la pista y reproducir la siguiente
         audio.addEventListener("ended", playNextTrack);
     </script>
+
+    <script>
+                var audio = document.getElementById("bgMusic");
+            var toggleButton = document.getElementById("toggleMusic");
+
+        toggleButton.addEventListener("click", function() {
+            if (audio.paused) {
+                audio.play();
+                toggleButton.textContent = "Pausear";
+            } else {
+                audio.pause();
+                toggleButton.textContent = "Reanudar";
+            }
+        });
+
+    </script>
+    
 
     <script src="script.js"></script>
 </body>

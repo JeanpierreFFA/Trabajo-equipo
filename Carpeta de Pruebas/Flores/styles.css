@@ -1,3 +1,11 @@
+.pokemon-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff0000; /* Color del texto */
+    text-align: center; /* Alineación del texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+    margin-top: 5px; /* Espacio superior */
+}
 
 .modal {
     display: none; 
